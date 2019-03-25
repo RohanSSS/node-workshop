@@ -3,6 +3,14 @@ var fs = require("fs");
 
 var message = "I am so happy - on it like a car bonnet";
 
+var extensionType = {
+  html: "text/html",
+  css: "text/css",
+  js: "application/javascript",
+  jpg: "image/jpeg",
+  png: "image/png"
+};
+
 function handler(request, response) {
   var method = request.method;
   console.log(method);
@@ -25,6 +33,16 @@ function handler(request, response) {
     response.writeHead(200, { "Content-Type": "text/html" });
     response.write("Bob's your girls");
     response.end();
+  } else {
+    var extension = endpoint.split(".")[1];
+    fs.readFile(__dirname + "/../public" + endpoint, function(error, file) {
+      if (error) {
+        console.log(error);
+        return;
+      }
+      response.writeHead(200, { "Content-Type": extensionType[extension] });
+      response.end(file);
+    });
   }
 }
 
