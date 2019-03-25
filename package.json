@@ -1,0 +1,22 @@
+{
+  "name": "nodegirls-workshop",
+  "version": "1.0.0",
+  "description": "test blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohanSSS/node-workshop.git"
+  },
+  "keywords": [
+    "nodegirls"
+  ],
+  "author": "FAR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohanSSS/node-workshop/issues"
+  },
+  "homepage": "https://github.com/RohanSSS/node-workshop#readme"
+}
