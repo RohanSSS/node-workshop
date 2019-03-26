@@ -22,5 +22,8 @@
   "homepage": "https://github.com/RohanSSS/node-workshop#readme",
   "dependencies": {
     "nodemon": "^1.18.10"
+  },
+  "engines": {
+    "node": "11.10.0"
   }
 }
