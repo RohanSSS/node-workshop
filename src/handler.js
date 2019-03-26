@@ -8,7 +8,9 @@ var extensionType = {
   css: "text/css",
   js: "application/javascript",
   jpg: "image/jpeg",
-  png: "image/png"
+  png: "image/png",
+  ico: "image/x-icon",
+  json: "text/json"
 };
 
 function handler(request, response) {
