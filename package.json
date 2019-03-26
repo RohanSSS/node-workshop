@@ -4,7 +4,8 @@
   "description": "test blog",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/RohanSSS/node-workshop/issues"
   },
-  "homepage": "https://github.com/RohanSSS/node-workshop#readme"
+  "homepage": "https://github.com/RohanSSS/node-workshop#readme",
+  "dependencies": {
+    "nodemon": "^1.18.10"
+  }
 }
